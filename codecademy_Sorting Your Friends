@@ -1,0 +1,48 @@
+//This program leverges CSS class and ID selectors to visually separate people into friends, family, and mortal enemies.
+
+//index.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>My Social Network</title>
+	</head>
+	<body>
+		<!--Add your HTML below!-->
+		<div class="friend" id = "best_friend">Mary</div>
+	    <div class="enemy" id="archnemesis">John</div>
+	    <div class="family">Chia</div>
+	</body>
+</html>
+
+//stylesheet.css
+/*Add your CSS below!*/
+
+div {
+	display: inline-block;
+	margin-left: 5px;
+	border-radius: 100%;
+	height: 100px;
+	width: 100px;
+	border: 2px solid black;
+}
+
+.friend {
+    border: 2px dashed #008000;
+}
+
+.family {
+    border: 2px dashed #0000FF;
+}
+
+.enemy {
+    border: 2px dashed #FF0000;
+}
+
+#best_friend {
+    border: 4px solid #00C957;
+}
+
+#archnemesis {
+    border: 4px solid #CC0000;
+}
